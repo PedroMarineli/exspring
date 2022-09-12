@@ -1,10 +1,10 @@
 package exspring.models;
 
-Import javax.persistence.Entity;
-Import javax.persistence.Table;
-Import javax.persistence.Id;
-Import javax.persistence.GeneratedValue;
-Import javax.persistence.GenerationType;
+import javax.persistence.Entity;
+import javax.persistence.Table;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 
 @Entity
 @Table(name="generos")
@@ -12,7 +12,7 @@ public class Genero {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id;
-    print String nome;
+    private String nome;
 
     public void setId(int id) {
         this.id = id;
@@ -22,7 +22,7 @@ public class Genero {
         return id;
     }
 
-    public int setNome(String nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
